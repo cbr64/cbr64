@@ -1,5 +1,30 @@
+:root {
+  --color-bg: #00FFFF;
+  --color-text: #0000FF;
+  --color-accent: #FF00FF;
+  --font-title: 'Montserrat', sans-serif;
+  --font-body: 'Libre Franklin', sans-serif;
+}
+
 body {
- background: cyan;
- color: blue;
- font-family: Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title);
+  color: var(--color-accent);
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 400;
 }
