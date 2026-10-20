@@ -1,16 +1,44 @@
 :root {
-  --color-bg: #00FFFF;
-  --color-text: #0000FF;
-  --color-accent: #FF00FF;
+  --cyan: #00FFFF;
+  --blue: #0000FF;
+  --magenta: #FF00FF;
+  --color-bg: var(--cyan);
+  --color-text: var(--blue);
+  --color-accent: var(--magenta);
   --font-title: 'Montserrat', sans-serif;
   --font-body: 'Libre Franklin', sans-serif;
+    a:link {
+    color: var(--magenta);
+  }
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body);
+  transition: all 0.5s ease;
 }
+
+body.dark-mode {
+  background-color: var(--blue);
+  color: var(--cyan);
+  a:link {
+  color: var(--cyan);
+  }
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--blue);
+    --color-text: var(--cyan);
+    --color-accent: var(--magenta);
+    a:link {
+    color: var(--color-accent);
+    }
+    }
+  }
+*/
 
 h1, h2, h3 {
   font-family: var(--font-title);
