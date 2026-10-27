@@ -1,5 +1,17 @@
 console.log("Hola mundo!");
-let modoOscuro = document.getElementById("modoOscuro"); 
-modoOscuro.addEventListener("click", function() {
-document.body.classList.toggle("dark-mode");
+
+
+const TOGGLE_BTN = document.getElementById("modoOscuro");
+const ROOT = document.documentElement;
+TOGGLE_BTN.addEventListener("click", function() {
+  ROOT.classList.toggle("dark-mode");
 });
+
+/*
+function saludar(nombre="mundo") {
+alert("Hola " + nombre);
+}
+
+saludar();
+saludar("Charly");
+*/
