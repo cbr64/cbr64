@@ -67,3 +67,37 @@ p {
   font-size: 1.2em;
   font-weight: 400;
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.social-links a {
+  display: inline-flex;
+  color: var(--color-accent);
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  color: var(--color-text);
+}
+
+html.dark-mode .social-links a {
+  color: var(--cyan);
+}
+
+html.dark-mode .social-links a:hover,
+html.dark-mode .social-links a:focus-visible {
+  color: var(--color-accent);
+}
+
+.social-links svg {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
